@@ -83,7 +83,7 @@ This guide is being written chapter by chapter. Every chapter listed as ✅ belo
 | 1 · Personal Financial Planning | 1–4 | ✅ Complete |
 | 2 · Indian Financial Markets | 5–6 | ✅ Complete |
 | 3 · Investment Products | 7–10 | ✅ Complete |
-| 4 · Investment Through Managed Portfolio | 11–13 | 🚧 Ch 11 done; 12–13 in progress |
+| 4 · Investment Through Managed Portfolio | 11–13 | 🚧 Ch 11–12 done; Ch 13 in progress |
 | 5 · Portfolio Construction, Monitoring & Evaluation | 14–16 | ⏳ Planned |
 | 6 · Operations, Regulation, Compliance & Ethics | 17–20 | ⏳ Planned |
 
