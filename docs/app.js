@@ -70,16 +70,28 @@
 
   // ---------- Theme ----------
   var TKEY = "nismxa_theme";
-  function applyTheme(t) {
+  function applyTheme(t, remember) {
     document.documentElement.setAttribute("data-theme", t);
     var b = document.getElementById("themeBtn");
     if (b) b.textContent = t === "dark" ? "☀️" : "🌙";
-    try { localStorage.setItem(TKEY, t); } catch (e) {}
+    // Only persist a theme the reader actually chose, so a theme merely
+    // inherited from the OS or host page doesn't freeze in place.
+    if (remember) { try { localStorage.setItem(TKEY, t); } catch (e) {} }
   }
   (function initTheme() {
     var saved; try { saved = localStorage.getItem(TKEY); } catch (e) {}
-    // Default to the light reading theme; only use dark if the user chose it.
-    applyTheme(saved === "dark" ? "dark" : "light");
+    if (saved === "dark" || saved === "light") { applyTheme(saved); return; }
+    // No stored choice yet — respect the environment instead of forcing light:
+    // 1) a data-theme already stamped on <html> by the host page, then
+    // 2) the operating system's colour-scheme preference.
+    var stamped = document.documentElement.getAttribute("data-theme");
+    if (stamped === "dark" || stamped === "light") { applyTheme(stamped); return; }
+    var prefersDark = false;
+    try {
+      prefersDark = window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+    } catch (e) {}
+    applyTheme(prefersDark ? "dark" : "light");
   })();
 
   // ---------- Reading text size ----------
@@ -1186,7 +1198,7 @@
   document.getElementById("menuBtn").addEventListener("click", function () { sidebar.classList.contains("open") ? closeSidebar() : openSidebar(); });
   overlay.addEventListener("click", closeSidebar);
 
-  document.getElementById("themeBtn").addEventListener("click", function () { applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark"); });
+  document.getElementById("themeBtn").addEventListener("click", function () { applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark", true); });
   var fu = document.getElementById("fontUp"), fd = document.getElementById("fontDown");
   if (fu) fu.addEventListener("click", function () { applyScale(readScale + 0.1); });
   if (fd) fd.addEventListener("click", function () { applyScale(readScale - 0.1); });
