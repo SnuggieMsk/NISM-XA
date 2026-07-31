@@ -64,7 +64,7 @@ Each chapter folder contains **three files**:
 | `flashcards.md` | **Flashcards** — question on one side, answer on the other | Revise daily; cover the answer and test yourself |
 | `questions.md` | **Question Bank — 100 MCQs**, each with a full explanation (the formula used, *and* why every wrong option is wrong) + a worked caselet | Attempt *after* reading the notes |
 
-That's **~2,000 practice MCQs + 20 worked caselets** across the guide. Each `questions.md` is organised into three difficulty tiers so you build up gradually:
+Each `questions.md` is organised into three difficulty tiers so you build up gradually:
 
 - 🟢 **Tier 1 — Easy (Recall):** definitions and facts (≈Q1–35)
 - 🟡 **Tier 2 — Medium (Application):** "which rule applies here", comparisons (≈Q36–70)
@@ -72,11 +72,24 @@ That's **~2,000 practice MCQs + 20 worked caselets** across the guide. Each `que
 
 Every answer sits inside a collapsible *"Answer & Explanation"* block — attempt first, then expand to see **why the right option is right, why the others are wrong, and the exact calculation behind it.**
 
-**Plus, across the whole guide:**
+---
 
-- 📑 **10 full-length mock papers** — each built to the exact 150-mark blueprint (90 MCQs + 6 one-mark caselets + 3 two-mark caselets), auto-scored with real negative marking and a 3-hour timer.
-- 🔢 **Financial Maths Primer** — every formula in the syllabus, derived and worked.
-- 📊 **Excel/Calc TVM guide** — the spreadsheet functions you'll actually use in the exam hall.
+## 🚧 Build status
+
+This guide is being written chapter by chapter. Every chapter listed as ✅ below is **complete and machine-validated** — notes, flashcards, 100 explained MCQs and a worked caselet.
+
+| Module | Chapters | Status |
+|---|---|---|
+| 1 · Personal Financial Planning | 1–4 | ✅ Complete |
+| 2 · Indian Financial Markets | 5–6 | ✅ Complete |
+| 3 · Investment Products | 7–10 | ✅ Complete |
+| 4 · Investment Through Managed Portfolio | 11–13 | 🚧 Ch 11 done; 12–13 in progress |
+| 5 · Portfolio Construction, Monitoring & Evaluation | 14–16 | ⏳ Planned |
+| 6 · Operations, Regulation, Compliance & Ethics | 17–20 | ⏳ Planned |
+
+**Also planned:** full-length mock papers built to the exact 150-mark blueprint (90 MCQs + 6 one-mark caselets + 3 two-mark caselets), a financial-maths primer, and an Excel/Calc TVM guide.
+
+> Chapters not yet written simply don't appear in the study app's navigation — nothing is broken, and the completed chapters are fully usable today.
 
 **Recommended cycle per chapter:**
 > Read `notes.md` → drill `flashcards.md` → attempt `questions.md` (Easy → Medium → Hard) → re-read the notes for anything you got wrong.

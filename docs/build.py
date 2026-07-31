@@ -49,14 +49,21 @@ def read(rel):
 
 
 def main():
-    chapters = []
+    chapters, skipped = [], []
     for num, title, module in META:
         d = f"chapter-{num}"
+        notes = read(f"{d}/notes.md")
+        flashcards = read(f"{d}/flashcards.md")
+        questions = read(f"{d}/questions.md")
+        # A chapter folder can exist before its content is written. Omit empty
+        # chapters so the site never shows a navigation entry that opens a
+        # blank page.
+        if not (notes or flashcards or questions):
+            skipped.append(num)
+            continue
         chapters.append({
             "num": num, "title": title, "module": module,
-            "notes": read(f"{d}/notes.md"),
-            "flashcards": read(f"{d}/flashcards.md"),
-            "questions": read(f"{d}/questions.md"),
+            "notes": notes, "flashcards": flashcards, "questions": questions,
         })
     # Mock papers (study-guide/mock-papers/paper-01.md …)
     papers = []
@@ -74,6 +81,9 @@ def main():
     paper_q = sum(p["md"].count("\n**Q") for p in papers)
     print(f"Wrote content.js: {len(out):,} bytes · {len(chapters)} chapters · "
           f"~{total_q} chapter questions · {len(papers)} mock papers (~{paper_q} questions)")
+    if skipped:
+        print(f"  (skipped {len(skipped)} chapter(s) with no content yet: "
+              f"{', '.join(skipped)})")
 
 
 if __name__ == "__main__":
