@@ -28,7 +28,7 @@ An **Investment Adviser** is a financial doctor. A doctor examines your body and
 | **Independent MCQs** | 90 questions × 1 mark | **90** |
 | **Caselets (1-mark)** | 6 caselets × 5 questions × 1 mark | **30** |
 | **Caselets (2-mark)** | 3 caselets × 5 questions × 2 marks | **30** |
-| **TOTAL** | **105 questions** | **150** |
+| **TOTAL** | **135 questions** | **150** |
 
 - ⏱️ **Time:** 3 hours
 - ✅ **Passing score:** 60% — i.e. **90 out of 150 marks**
@@ -167,7 +167,7 @@ This guide is being written chapter by chapter. Every chapter listed as ✅ belo
 
 Burn these into memory — they recur across chapters and caselets:
 
-1. **Exam:** 150 marks · 105 questions · 3 hours · pass **90/150 (60%)** · **25% negative marking**.
+1. **Exam:** 150 marks · 135 questions · 3 hours · pass **90/150 (60%)** · **25% negative marking**.
 2. **FV = PV × (1 + r)ⁿ** — and PV = FV ÷ (1 + r)ⁿ. Everything else in Module 1 is a variation of this.
 3. **Effective annual rate** with *m* compoundings: **(1 + r/m)^m − 1**. Monthly compounding always beats annual.
 4. **Real return** = [(1 + nominal) ÷ (1 + inflation)] − 1 — *not* simply nominal minus inflation.

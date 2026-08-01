@@ -18,7 +18,7 @@ A complete, free study package for the **NISM-Series-X-A: Investment Adviser (Le
 | | |
 |---|---|
 | **Structure** | 90 independent MCQs (1 mark) + 6 caselets × 5 Q × 1 mark + 3 caselets × 5 Q × 2 marks |
-| **Total** | 105 questions · **150 marks** |
+| **Total** | 135 questions · **150 marks** |
 | **Duration** | 3 hours |
 | **Pass mark** | 60% — **90 / 150** |
 | **Negative marking** | 25% of the marks assigned to the question |
