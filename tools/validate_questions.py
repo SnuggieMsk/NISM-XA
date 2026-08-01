@@ -29,7 +29,11 @@ CORR = re.compile(r"\*\*Correct:\s*([A-D])\)", re.I)
 SMELL = re.compile(r"\bthe correct answer is\b|\bhold on\b|\bchecking the options\b|\bclosest option is\b|\bnearest option is\b|\bthe nearest is\b|\bamong the options the\b", re.I)
 base = pathlib.Path("study-guide")
 bad = 0
-files = sorted(base.glob("chapter-*/questions.md")) + sorted(base.glob("mock-papers/paper-*.md"))
+# Explicit paths win, so a half-written paper can be checked before it is assembled.
+if len(sys.argv) > 1:
+    files = [pathlib.Path(a) for a in sys.argv[1:]]
+else:
+    files = sorted(base.glob("chapter-*/questions.md")) + sorted(base.glob("mock-papers/paper-*.md"))
 for fp in files:
     src = fp.read_text(encoding="utf-8")
     declared = re.findall(r"^\*\*Q([\w-]+)\.\*\*", src, re.M)
