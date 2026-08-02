@@ -1106,11 +1106,13 @@
     });
     contentEl.innerHTML =
       '<div class="hero" style="background:linear-gradient(135deg,#107c41,#2f6df6)"><h1>💻 Excel TVM Calculator</h1>'
-      + '<p>The exam machines have Excel — this page behaves exactly like it. Fill any four boxes, press <b>CPT</b> on the fifth, and see the Excel formula you\'d type. Try the one-click presets (including the exact sums from the practice sheet photo).</p>'
+      + '<p>The test centre gives you a spreadsheet, not a financial calculator. This page behaves exactly like one. Fill any four boxes, press <b>CPT</b> on the fifth, and see the formula you\'d actually type. Module 1 alone is 37 marks and almost entirely numerical — this is where they live.</p>'
       + '<div class="hero-cta"><a class="cta" href="nism-tvm-practice.xlsx" download>⬇️ Download the practice workbook (.xlsx)</a></div></div>'
       + sheet
       + '<h2 class="xl-h2">⚡ One-click presets</h2>' + presets
-      + '<details class="lab-formulas"><summary>📖 Read the full one-pager guide (sign rules, error decoder, drills)</summary><div class="markdown-body">' + md(EXCEL) + "</div></details>";
+      + '<h2 class="xl-h2">📖 The full spreadsheet guide</h2>'
+      + '<p class="xl-sub">Every function the X-A exam can ask for — the sign convention, rate/period units, amortisation, <code>XIRR</code>, bond and portfolio functions, the ten errors that cost the most marks, and a 15-question drill set. Every worked figure below is machine-verified.</p>'
+      + '<div class="markdown-body">' + md(EXCEL) + "</div>";
     contentEl.querySelectorAll("[data-xcpt]").forEach(function (b) { b.addEventListener("click", function () { xlCompute(b.dataset.xcpt); }); });
     contentEl.querySelectorAll(".xl-preset").forEach(function (b) {
       b.addEventListener("click", function () {

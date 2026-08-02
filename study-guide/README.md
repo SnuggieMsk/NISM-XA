@@ -74,22 +74,28 @@ Every answer sits inside a collapsible *"Answer & Explanation"* block — attemp
 
 ---
 
-## 🚧 Build status
+## ✅ What's here
 
-This guide is being written chapter by chapter. Every chapter listed as ✅ below is **complete and machine-validated** — notes, flashcards, 100 explained MCQs and a worked caselet.
+All **20 chapters** are complete and machine-validated — notes, flashcards, 100 explained MCQs and a worked 5-part caselet each.
 
 | Module | Chapters | Status |
 |---|---|---|
 | 1 · Personal Financial Planning | 1–4 | ✅ Complete |
 | 2 · Indian Financial Markets | 5–6 | ✅ Complete |
 | 3 · Investment Products | 7–10 | ✅ Complete |
-| 4 · Investment Through Managed Portfolio | 11–13 | 🚧 Ch 11–12 done; Ch 13 in progress |
-| 5 · Portfolio Construction, Monitoring & Evaluation | 14–16 | ⏳ Planned |
-| 6 · Operations, Regulation, Compliance & Ethics | 17–20 | ⏳ Planned |
+| 4 · Investment Through Managed Portfolio | 11–13 | ✅ Complete |
+| 5 · Portfolio Construction, Monitoring & Evaluation | 14–16 | ✅ Complete |
+| 6 · Operations, Regulation, Compliance & Ethics | 17–20 | ✅ Complete |
 
-**Also planned:** full-length mock papers built to the exact 150-mark blueprint (90 MCQs + 6 one-mark caselets + 3 two-mark caselets), a financial-maths primer, and an Excel/Calc TVM guide.
+**That's 2,100 explained questions across the six modules**, plus:
 
-> Chapters not yet written simply don't appear in the study app's navigation — nothing is broken, and the completed chapters are fully usable today.
+| Extra | What it is |
+|---|---|
+| [`financial-maths-primer.md`](financial-maths-primer.md) | Every numerical formula in the syllabus, derived from first principles, with worked examples and a quick-reference table |
+| [`excel-tvm-guide.md`](excel-tvm-guide.md) | The spreadsheet you get in the test centre — `PV`/`FV`/`PMT`/`RATE`/`NPER`, amortisation, `XIRR`, bond and portfolio functions, and the ten errors that cost the most marks |
+| [`mock-papers/`](mock-papers/) | Full-length papers built to the exact 150-mark blueprint (90 MCQs + 6 one-mark caselets + 3 two-mark caselets) |
+
+> **On accuracy:** every `questions.md` is checked by `tools/validate_questions.py`, which re-implements the *exact* regex the study app uses to parse questions — so a malformed option line or a missing answer marker fails loudly instead of silently dropping the question. All 20 chapters pass at 105/105. Numerical answers are cross-checked against the worked calculation in each explanation, but this is an independent study aid, not an official NISM product — **verify current rates, limits and regulations against the official workbook before relying on them.**
 
 **Recommended cycle per chapter:**
 > Read `notes.md` → drill `flashcards.md` → attempt `questions.md` (Easy → Medium → Hard) → re-read the notes for anything you got wrong.
