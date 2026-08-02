@@ -1,0 +1,11 @@
+# Generated single-file bundle (rebuild with: python3 docs/build_artifact.py)
+docs/standalone.html
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
