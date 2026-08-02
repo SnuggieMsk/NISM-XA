@@ -773,7 +773,7 @@ A) ₹40,625  B) ₹25,000  C) ₹65,000  D) Nil
 <details><summary>Answer & Explanation</summary>
 
 **Correct: B)** — Taxable gain = 3,25,000 − 1,25,000 = ₹2,00,000. Tax = 12.5% × 2,00,000 = **₹25,000**.
-A) Applies 12.5% to the whole gain without the exemption. C) Applies the 20% short-term rate to the taxable portion. D) The gain far exceeds the exemption.
+A) Applies 12.5% to the whole gain without the exemption. C) Applies the 20% short-term rate to the whole gain, missing both the correct rate and the exemption. D) The gain far exceeds the exemption.
 </details>
 
 **Q97.** If instead the same ₹2,00,000 of gain had been short-term, the tax would be:
