@@ -12,7 +12,8 @@ This folder is a **self-contained website** for studying the NISM Series X-A (In
 - **Global search** — press `/` and search across every chapter.
 - **Progress tracking** — mark sections "studied"; a progress bar remembers it (saved in your browser).
 - **Dark / light mode**, adjustable text size, and a fully **mobile-friendly** layout.
-- **Works offline** — all content is bundled into `content.js`, so no server is required (markdown rendering uses a CDN; if offline, text still shows).
+- **Financial Maths Primer & spreadsheet guide** — every formula in the syllabus, and the Excel/Calc functions the test centre actually gives you.
+- **Works offline** — all content is bundled into `content.js` and the markdown renderer is vendored in `vendor/`, so nothing is fetched at runtime. (Web fonts are the one exception; without a network the page falls back to system fonts and everything still works.)
 
 ## ▶️ How to view it
 
