@@ -1456,15 +1456,15 @@ NAV = (Total assets − Total liabilities) ÷ Units outstanding
 </details>
 
 **Q102.** How many units will Kavita's Rs 6,00,000 lump sum buy?
-A) 11,688.31  B) 11,759.24  C) 11,831.46  D) 11,903.63
+A) 11,688.31  B) 11,759.22  C) 11,830.99  D) 11,903.63
 <details><summary>Answer & Explanation</summary>
 
-**Correct: C) 11,831.46**
+**Correct: C) 11,830.99**
 
-Units = Amount invested ÷ NAV = 6,00,000 ÷ 50.7143 = **11,831.46 units**.
+Units = Amount invested ÷ NAV = 6,00,000 ÷ 50.714286 = **11,830.99 units**.
 
 - **A) 11,688.31** - wrong; this uses Rs 51.33, the NAV obtained by adding liabilities instead of subtracting them.
-- **B) 11,759.24** - wrong; this uses Rs 51.02, the NAV obtained by ignoring liabilities.
+- **B) 11,759.22** - wrong; this uses Rs 51.02, the NAV obtained by ignoring liabilities.
 - **D) 11,903.63** - wrong; this uses Rs 50.40, the NAV obtained by double-counting liabilities.
 
 </details>
@@ -1953,18 +1953,18 @@ Price = **Rs 926.08**. Coupon (9%) is below the required yield (11%), so the bon
 </details>
 
 **Q132.** A year from now, with 4 years to maturity and the required yield down to 9.5%, what will Bond X be worth and what capital gain will that represent per bond?
-A) Rs 983.97, a gain of Rs 57.89  B) Rs 983.97, a loss of Rs 57.89  C) Rs 962.09, a gain of Rs 36.01  D) Rs 1,000.00, a gain of Rs 73.92
+A) Rs 983.98, a gain of Rs 57.90  B) Rs 983.98, a loss of Rs 57.90  C) Rs 962.09, a gain of Rs 36.01  D) Rs 1,000.00, a gain of Rs 73.92
 <details><summary>Answer & Explanation</summary>
 
-**Correct: A) Rs 983.97, a gain of Rs 57.89**
+**Correct: A) Rs 983.98, a gain of Rs 57.90**
 
 Step 1 — reprice at the new yield and the shorter maturity. (1.095)^4 = 1.4376610, so the discount factor is 0.6955730.
 Annuity factor = (1 − 0.6955730) ÷ 0.095 = 3.2044947.
-PV of coupons = 90 × 3.2044947 = Rs 288.40; PV of redemption = 1,000 × 0.6955730 = Rs 695.57.
-New price = **Rs 983.97**.
-Step 2 — the gain: 983.97 − 926.08 = **Rs 57.89 a bond**. Falling yields lift bond prices, and the bond is still at a small discount because 9% coupon < 9.5% yield ✓
+PV of coupons = 90 × 3.2044947 = Rs 288.404; PV of redemption = 1,000 × 0.6955730 = Rs 695.573.
+New price = **Rs 983.98**.
+Step 2 — the gain: 983.98 − 926.08 = **Rs 57.90 a bond**. Falling yields lift bond prices, and the bond is still at a small discount because 9% coupon < 9.5% yield ✓
 
-- **B) Rs 983.97, a loss of Rs 57.89** - wrong; the price is right but the direction is reversed. A fall in yields produces a capital **gain**.
+- **B) Rs 983.98, a loss of Rs 57.90** - wrong; the price is right but the direction is reversed. A fall in yields produces a capital **gain**.
 - **C) Rs 962.09, a gain of Rs 36.01** - wrong; Rs 962.09 comes from discounting five years of cash flows at 10%, not four years at 9.5%.
 - **D) Rs 1,000.00, a gain of Rs 73.92** - wrong; the bond would price at par only if the required yield fell all the way to the 9% coupon rate.
 

@@ -93,9 +93,20 @@ All **20 chapters** are complete and machine-validated — notes, flashcards, 10
 |---|---|
 | [`financial-maths-primer.md`](financial-maths-primer.md) | Every numerical formula in the syllabus, derived from first principles, with worked examples and a quick-reference table |
 | [`excel-tvm-guide.md`](excel-tvm-guide.md) | The spreadsheet you get in the test centre — `PV`/`FV`/`PMT`/`RATE`/`NPER`, amortisation, `XIRR`, bond and portfolio functions, and the ten errors that cost the most marks |
-| [`mock-papers/`](mock-papers/) | Full-length papers built to the exact 150-mark blueprint (90 MCQs + 6 one-mark caselets + 3 two-mark caselets) |
+| [`mock-papers/`](mock-papers/) | **10 full-length papers**, each built to the exact 150-mark blueprint — 90 MCQs + 6 one-mark caselets + 3 two-mark caselets = **135 questions** |
 
-> **On accuracy:** every `questions.md` is checked by `tools/validate_questions.py`, which re-implements the *exact* regex the study app uses to parse questions — so a malformed option line or a missing answer marker fails loudly instead of silently dropping the question. All 20 chapters pass at 105/105. Numerical answers are cross-checked against the worked calculation in each explanation, but this is an independent study aid, not an official NISM product — **verify current rates, limits and regulations against the official workbook before relying on them.**
+**Grand total: 3,450 explained questions** — 2,100 across the chapters and 1,350 across the ten papers.
+
+### On accuracy
+
+Two checkers guard this material, and both live in [`tools/`](../tools/):
+
+- **`validate_questions.py`** re-implements the *exact* regex the study app uses to parse questions, so a malformed option line or a missing answer marker fails loudly instead of silently dropping the question from the quiz. It also catches an answer marker that names a different option than the letter it claims, and two options that are secretly the same answer. **All 20 chapters pass at 105/105 and all 10 papers at 135/135, with zero issues.**
+- **`check_arithmetic.py`** re-computes the arithmetic each explanation states in its own working. **1,598 statements were checked across every chapter and every paper with no genuine errors found.** It is deliberately conservative: anything it cannot read unambiguously is skipped and counted rather than guessed at.
+
+Beyond the automated passes, the caselets of several papers were recomputed by hand — every 2-mark question in Section C of all ten papers, plus the 1-mark caselets of paper 1.
+
+> This is an independent study aid built from the publicly published NISM syllabus and test objectives, not an official NISM product. **Verify current rates, limits and regulations against the official workbook before relying on them** — tax rates and SEBI regulations change.
 
 **Recommended cycle per chapter:**
 > Read `notes.md` → drill `flashcards.md` → attempt `questions.md` (Easy → Medium → Hard) → re-read the notes for anything you got wrong.

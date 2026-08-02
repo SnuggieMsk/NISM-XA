@@ -10,8 +10,9 @@ A complete, free study package for the **NISM-Series-X-A: Investment Adviser (Le
 
 | Folder | Contents |
 |--------|----------|
-| [`study-guide/`](study-guide/) | 20 chapters × (short notes + flashcards + a 100-MCQ bank with full explanations), a financial-maths primer, an Excel/Calc TVM guide, and 10 full-length mock papers |
+| [`study-guide/`](study-guide/) | 20 chapters × (short notes + flashcards + a 100-MCQ bank with full explanations), a financial-maths primer, an Excel/Calc TVM guide, and 10 full-length mock papers — **3,450 explained questions in all** |
 | [`docs/`](docs/) | The self-contained study web app served by GitHub Pages |
+| [`tools/`](tools/) | The two checkers that keep the question banks honest — see [study-guide/README](study-guide/README.md#on-accuracy) |
 
 ## The exam in one table
 
